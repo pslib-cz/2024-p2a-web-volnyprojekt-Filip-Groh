@@ -1,0 +1,12 @@
+@layer normalize, icons;
+
+@import "normalize.css" layer(normalize);
+@import "icons.css" layer(icons);
+
+:root {
+  --color-text: light-dark(#080705, #F5F5F5);
+  --color-background: light-dark(#F5F5F5, #080705);
+  --color-action: #FF7F11;
+  --color-detail: #25ABE4;
+  --color-shadow: light-dark(#79B5FF, #001B3D);
+}

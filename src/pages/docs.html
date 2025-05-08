@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Docs | Editify</title>
+        <link rel="stylesheet" href="/src/styles/style.css" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <a href="./index.html">
+                    <img src="/logo.svg" alt="Editify Logo">
+                </a>
+                <nav>
+                    <menu>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./examples.html">Examples</a>
+                        </li>
+                        <li>
+                            <a href="./docs.html">Docs</a>
+                        </li>
+                        <li>
+                            <a href="./contacts.html">Contacts</a>
+                        </li>
+                    </menu>
+                </nav>
+            </header>
+            <section>
+                <h1>Editify Documentation: Get Started & Integrate</h1>
+                <p>Welcome to the Editify documentation hub. Here you'll find everything you need to integrate Editify into your projects quickly and efficiently. We provide comprehensive guides, API references, tutorials, and best practices designed for developers to ensure a smooth integration and powerful results.</p>
+            </section>
+            <section>
+                <h2>Get Started</h2>
+                <p>Ready to dive into the world of effortless content management with Editify? Awesome! Getting started is a breeze. Just follow these simple steps to unlock a smoother, faster, and more intuitive editing experience for your website.
+                    First things first, make sure you have Node.js and npm (or yarn) installed on your system. If you haven't already, you can grab them from https://nodejs.org/.
+                    Once you're all set with Node.js and npm, the next step is to bring Editify into your project. Open up your terminal or command prompt, navigate to your project's root directory, and get ready to run the installation command. It's as easy as:</p>
+                <code>npm install editify-cms</code>
+                <p>...and that's the magic! Editify will start downloading and integrating into your project. We'll walk you through the next steps to configure and unleash the full power of Editify in the sections below. Let's build something amazing together!</p>
+            </section>
+            <section>
+                <h2>Spin Up The Server</h2>
+                <p>Alright, now that you've brought Editify into your project, there's one more crucial step to get your content flowing seamlessly: you'll need to spin up the Editify backend server. Think of it as the engine that powers your content management experience.
+                    To get the server running, simply open your terminal in your project's root directory and fire off this command:</p>
+                <code>npx editify-cms server</code>
+                <p>This command will launch the Editify server, which handles all the behind-the-scenes magic for managing and delivering your content. Keep this server running while you're working with Editify.</p>
+                <p>Fantastic! With your backend server up and running, you're now ready to experience the magic of Editify directly on your website's frontend. Integrating Editify into your front-end is designed to be straightforward, allowing you (or your content editors) to make changes with ease.</p>
+            </section>
+            <section>
+                <h2>Usage With CommonJS</h2>
+                <p>If you are using CommonJS just import Editify from editify-cms, create new Editify object with url given by the backend server.</p>
+                <code>import { Editify } from 'editify-cms';
+                    const cms = new Editify('url to your backend Editify API');</code>
+                <p>After you set-up the connection, every element with attribute data-editify-id will fetch its content from the server. Given id represents what data will be fetched from the server.</p>
+                <code>&lt;div data-editify-id=”someUniqueID”&gt;
+                    &lt;/div&gt;
+                ...
+                &lt;button data-editify-id=”someUniqueID”&gt;
+                &lt;/button&gt;
+                ...
+                &lt;img data-editify-id=”someUniqueID”&gt;</code>
+            </section>
+            <section>
+                <h2>Usage With React</h2>
+                <p>If you are using React you need to wrap your entire website that uses Editify components in an EditifyContext. &lt;EditifyContext&gt; takes 1 argument backendAPI. There you put the url given by the backend server. </p>
+                <code>import { EditifyContext } from 'editify-cms';
+
+                    &lt;EditifyContext backendAPI=”url to your backend Editify API”&gt;
+                        &lt;App /&gt;
+                    &lt;/EditifyContext&gt;</code>
+                <code>import { EditableText, EditableImage } from 'editify-cms/components';
+
+                    &lt;&gt;
+                        &lt;EditableText id=”someUniqueID” /&gt;
+                        &lt;EditableImage id=”someUniqueID” /&gt;
+                    &lt;/&gt;</code>
+                <p>After that you just import components &lt;EditableText&gt; or &lt;EditableImage&gt; from editify-cms/components. Each component takes id argument that represents the data on the server.</p>
+            </section>
+            <section>
+                <h2>Editing Values</h2>
+                <p>Now you can enjoy your editable website. If you want to edit your content just visit the URL given by the server. There you can start editing texts and images. Don't forget to click the save button!</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Key</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Button1</td>
+                            <td>View Docs</td>
+                        </tr>
+                        <tr>
+                            <td>Button2</td>
+                            <td>See Examples</td>
+                        </tr>
+                        <tr>
+                            <td>ContactInfo1</td>
+                            <td>support@editify.io</td>
+                        </tr>
+                        <tr>
+                            <td>ContactInfo2</td>
+                            <td>123 Developer Drive, Tech City, TC 98765</td>
+                        </tr>
+                        <tr>
+                            <td>ContactInfo3</td>
+                            <td>+1 123-4567</td>
+                        </tr>
+                        <tr>
+                            <td>Img1</td>
+                            <td>
+                                <img src="/logo.svg" alt="Editify Logo">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <footer>
+                <p>Editify - Filip Groh - 2025</p>
+            </footer>
+        </main>
+        <script type="module" src="/src/scripts/main.js"></script>
+    </body>
+</html>
