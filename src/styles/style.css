@@ -1,9 +1,12 @@
-@layer normalize, icons;
+@layer normalize, icons, components;
 
 @import "normalize.css" layer(normalize);
 @import "icons.css" layer(icons);
+@import "components.css" layer(components);
 
 :root {
+  font-size: 16px;
+
   --color-text: light-dark(#080705, #F5F5F5);
   --color-background: light-dark(#F5F5F5, #080705);
   --color-action: #FF7F11;
