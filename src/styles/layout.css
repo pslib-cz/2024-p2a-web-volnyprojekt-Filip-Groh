@@ -1,0 +1,17 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.page__section {
+    margin: 0 1rem;
+}
+
+.page__section--hero {
+    margin-top: 4rem;
+}
+
+.page__section--center {
+    text-align: center;
+}

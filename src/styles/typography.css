@@ -1,27 +1,101 @@
-.heading-1 {
+h1 {
     font-size: 32px;
+    margin: 0;
 }
 
-.heading-2 {
+.heading-1--bottom-margin {
+    margin-bottom: 1rem;
+}
+
+.heading-1--center {
+    text-align: center;
+}
+
+h2 {
     font-size: 24px;
+    margin: 0;
 }
 
-.heading-3 {
+.heading-2--bottom-margin {
+    margin-bottom: 1rem;
+}
+
+.heading-2--center {
+    text-align: center;
+}
+
+.heading-2--block {
+    display: block;
+}
+
+h3 {
     font-size: 20px;
+    margin: 0;
 }
 
-.paragraph {
+.heading-3--bottom-margin-0-25 {
+    margin-bottom: 0.25rem;
+}
+
+.heading-3--center {
+    text-align: center;
+}
+
+p {
     font-size: 16px;
+    margin: 0;
 }
 
-.code {
+.paragraph--center {
+    text-align: center;
+}
+
+.paragraph--bottom-margin {
+    margin-bottom: 1rem;
+}
+
+.paragraph--bottom-margin-2 {
+    margin-bottom: 2rem;
+}
+
+code {
+    display: inline-block;
     font-size: 14px;
+    margin: 2rem 1rem;
 }
 
 .small {
     font-size: 14px;
+    margin: 0;
+}
+
+.small--bottom-margin-0-125 {
+    margin-bottom: 0.125rem;
+}
+
+.small--bottom-margin {
+    margin-bottom: 1rem;
 }
 
 .button {
     font-size: 16px;
+    margin: 0;
+}
+
+label {
+    font-size: 16px;
+    margin: 0;
+}
+
+.label--bottom-margin-0-25 {
+    margin-bottom: 0.25rem;
+}
+
+input {
+    font-size: 14px;
+    margin: 0;
+}
+
+.input--bottom-margin-0-5 {
+    margin-bottom: 0.5rem;
 }

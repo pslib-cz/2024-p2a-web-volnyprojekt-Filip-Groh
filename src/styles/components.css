@@ -2,7 +2,8 @@
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     text-decoration: none;
-    color: var(--color-text)
+    color: var(--color-text);
+    display: inline-block;
 }
 
 .button--action {
@@ -11,4 +12,94 @@
 
 .button--detail {
     background-color: var(--color-detail);
+}
+
+.numbered-list {
+    counter-reset: numbered-list;
+    margin: 0;
+}
+
+.numbered-list > li {
+    counter-increment: numbered-list;
+    padding-left: 1rem;
+}
+
+.numbered-list > li::marker {
+    content: "Step " counter(numbered-list) ":";
+}
+
+.footer {
+    padding: 0.5rem 1rem;
+    background-color: var(--color-shadow);
+    text-align: center;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.feature--reverse {
+    flex-direction: row-reverse;
+}
+
+.feature__title {
+    margin-bottom: -1rem;
+}
+
+.editing-table, .editing-table tr, .editing-table td, .editing-table th {
+    border: 2px solid var(--color-detail);
+    border-collapse: collapse;
+}
+
+.editing-table td, .editing-table th {
+    width: 50%;
+    vertical-align: top;
+    padding: 0.25rem;
+}
+
+.editing-table img {
+    width: 100%;
+}
+
+.link {
+    display: inline-block;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.form__label--optional::before {
+    content: "*";
+    margin-right: 0.25rem;
+}
+
+.form__input--resize {
+    resize: vertical;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.card--bottom-margin-2 {
+    margin-bottom: 2rem;
+}
+
+.card__tag {
+    background-color: var(--color-detail);
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.card__tag::before {
+    content: "#";
+    margin-right: 0.25rem;
 }
