@@ -1,5 +1,7 @@
 h1 {
     font-size: 32px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -13,6 +15,8 @@ h1 {
 
 h2 {
     font-size: 24px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -30,6 +34,8 @@ h2 {
 
 h3 {
     font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -43,6 +49,8 @@ h3 {
 
 p {
     font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -61,11 +69,15 @@ p {
 code {
     display: inline-block;
     font-size: 14px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 300;
     margin: 2rem 1rem;
 }
 
 .small {
     font-size: 14px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -79,11 +91,15 @@ code {
 
 .button {
     font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
     margin: 0;
 }
 
 label {
     font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -93,6 +109,8 @@ label {
 
 input {
     font-size: 14px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
     margin: 0;
 }
 

@@ -58,6 +58,15 @@
     width: 50%;
     vertical-align: top;
     padding: 0.25rem;
+    font-size: 14px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 300;
+}
+
+.editing-table th {
+    font-size: 14px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
 }
 
 .editing-table img {
