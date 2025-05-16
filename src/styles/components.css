@@ -64,8 +64,6 @@
 }
 
 .editing-table th {
-    font-size: 14px;
-    font-family: "JetBrains Mono", monospace;
     font-weight: 700;
 }
 
@@ -106,9 +104,15 @@
     background-color: var(--color-detail);
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;
+    display: inline-block;
 }
 
 .card__tag::before {
     content: "#";
     margin-right: 0.25rem;
+}
+
+.code-block {
+    display: block;
+    overflow-x: auto;
 }
