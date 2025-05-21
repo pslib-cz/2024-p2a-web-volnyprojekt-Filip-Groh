@@ -1,11 +1,11 @@
-@layer normalize, typography, fonts, icons, components, layout;
+@layer normalize, typography, fonts, color, components, layout;
 
 @import "normalize.css" layer(normalize);
-@import "icons.css" layer(icons);
 @import "components.css" layer(components);
 @import "typography.css" layer(typography);
 @import "layout.css" layer(layout);
 @import "fonts.css" layer(fonts);
+@import "color.css" layer(color);
 
 :root {
   font-size: 16px;

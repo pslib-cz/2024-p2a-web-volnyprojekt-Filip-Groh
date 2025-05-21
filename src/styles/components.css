@@ -49,12 +49,16 @@
     margin-bottom: -1rem;
 }
 
-.editing-table, .editing-table tr, .editing-table td, .editing-table th {
+.editing-table,
+.editing-table tr,
+.editing-table td,
+.editing-table th {
     border: 2px solid var(--color-detail);
     border-collapse: collapse;
 }
 
-.editing-table td, .editing-table th {
+.editing-table td,
+.editing-table th {
     width: 50%;
     vertical-align: top;
     padding: 0.25rem;
@@ -137,40 +141,29 @@
 
 
 
+
+
+
 .header {
     position: fixed;
     width: 100%;
     background-color: var(--color-background);
 }
 
-.header > div {
+.header__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
 }
 
 .header__logo {
+    line-height: 0;
     padding: 1rem;
 }
 
-.header__logo > img {
+.logo__img {
     width: 128px;
-}
-
-.header__nav > menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header__nav > menu > li > a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
 }
 
 .header__nav {
@@ -181,7 +174,42 @@
     display: block;
 }
 
+.nav__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.nav__link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 1rem 2rem;
+    color: var(--color-text);
+}
+
+.nav__link--active .link__text {
+    position: relative;
+}
+
+.nav__link--active .link__text::after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    background-color: var(--color-text);
+    left: 0;
+    right: 0;
+    height: 0.125rem;
+}
+
 .header__hamburger {
+    margin-right: 2rem;
     fill: var(--color-text);
 }
 
@@ -189,10 +217,10 @@
     display: none;
 }
 
-.header__hamburger.active > :nth-child(2) {
-    display: block;
-}
-
 .header__hamburger.active > :nth-child(1) {
     display: none;
+}
+
+.header__hamburger.active > :nth-child(2) {
+    display: block;
 }

@@ -8,6 +8,10 @@
     margin: 0 1rem;
 }
 
+.page__section:first-of-type {
+    margin-top: calc(109px + 4rem);
+}
+
 .page__section--hero {
     margin-top: 4rem;
 }

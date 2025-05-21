@@ -10,30 +10,58 @@
     <body>
         <main class="page">
             <header class="header">
-                <div>
+                <div class="header__container">
                     <a class="header__logo" href="./index.html">
-                        <img src="/logo.svg" alt="Editify Logo" />
+                        <img
+                            class="logo__img"
+                            src="/logo.svg"
+                            alt="Editify Logo"
+                        />
                     </a>
                     <nav class="header__nav hamburger-zone">
-                        <menu>
+                        <menu class="nav__menu">
                             <li>
-                                <a class="paragraph" href="./index.html">Home</a>
+                                <a
+                                    class="nav__link nav__link--active paragraph"
+                                    href="./index.html"
+                                >
+                                    <span class="link__text">Home</span>
+                                </a>
                             </li>
                             <li>
-                                <a class="paragraph" href="./examples.html">Examples</a>
+                                <a
+                                    class="nav__link paragraph"
+                                    href="./examples.html"
+                                    ><span class="link__text">Examples</span>
+                                </a>
                             </li>
                             <li>
-                                <a class="paragraph" href="./docs.html">Docs</a>
+                                <a
+                                    class="nav__link paragraph"
+                                    href="./docs.html"
+                                    ><span class="link__text">Docs</span>
+                                </a>
                             </li>
                             <li>
-                                <a class="paragraph" href="./contacts.html">Contacts</a>
+                                <a
+                                    class="nav__link paragraph"
+                                    href="./contacts.html"
+                                    ><span class="link__text">Contacts</span>
+                                </a>
                             </li>
                         </menu>
                     </nav>
                     <div class="header__hamburger hamburger-zone hamburger-btn">
-                        <svg width="64" height="64" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                        <svg
+                            width="64"
+                            height="64"
+                            viewBox="0 0 96 96"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
                             <g clip-path="url(#clip0_91_1681)">
-                                <path d="M12 72H84V64H12V72ZM12 52H84V44H12V52ZM12 24V32H84V24H12Z" />
+                                <path
+                                    d="M12 72H84V64H12V72ZM12 52H84V44H12V52ZM12 24V32H84V24H12Z"
+                                />
                             </g>
                             <defs>
                                 <clipPath id="clip0_91_1681">
@@ -41,9 +69,16 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        <svg width="64" height="64" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                        <svg
+                            width="64"
+                            height="64"
+                            viewBox="0 0 96 96"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
                             <g clip-path="url(#clip0_91_1678)">
-                                <path d="M76 25.64L70.36 20L48 42.36L25.64 20L20 25.64L42.36 48L20 70.36L25.64 76L48 53.64L70.36 76L76 70.36L53.64 48L76 25.64Z" />
+                                <path
+                                    d="M76 25.64L70.36 20L48 42.36L25.64 20L20 25.64L42.36 48L20 70.36L25.64 76L48 53.64L70.36 76L76 70.36L53.64 48L76 25.64Z"
+                                />
                             </g>
                             <defs>
                                 <clipPath id="clip0_91_1678">
@@ -57,7 +92,9 @@
             <section class="page__section page__section--hero">
                 <h1 class="heading-1--bottom-margin">
                     Edit Simply,
-                    <span class="heading-2 heading-2--block">Without Compromise</span>
+                    <span class="heading-2 heading-2--block"
+                        >Without Compromise</span
+                    >
                 </h1>
                 <p class="paragraph--bottom-margin-2">
                     Empower your clients with easy content updates, while you
@@ -85,7 +122,26 @@
                     Why Developers Choose Editify
                 </h2>
                 <div class="feature">
-                    <h3 class="heading-3--center icon icon--code">
+                    <h3 class="heading-3--center">
+                        <svg
+                            width="96"
+                            height="96"
+                            viewBox="0 0 96 96"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_91_1928)">
+                                <path
+                                    class="icon__fill"
+                                    d="M37.6 66.4L19.2 48L37.6 29.6L32 24L8 48L32 72L37.6 66.4ZM58.4 66.4L76.8 48L58.4 29.6L64 24L88 48L64 72L58.4 66.4Z"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_91_1928">
+                                    <rect width="96" height="96" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
                         Simple Integration
                     </h3>
                     <p>
@@ -96,7 +152,20 @@
                     </p>
                 </div>
                 <div class="feature feature--reverse">
-                    <h3 class="heading-3--center icon icon--interaction">
+                    <h3 class="heading-3--center">
+                        <svg
+                            width="96"
+                            height="96"
+                            viewBox="0 0 96 96"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                class="icon__fill"
+                                d="M46.8 72C40.4 71.6667 35 69.2 30.6 64.6C26.2 60 24 54.4667 24 48C24 41.3333 26.3333 35.6667 31 31C35.6667 26.3333 41.3333 24 48 24C54.4667 24 60 26.2 64.6 30.6C69.2 35 71.6667 40.4 72 46.8L63.6 44.3C62.7333 40.7 60.8667 37.75 58 35.45C55.1333 33.15 51.8 32 48 32C43.6 32 39.8333 33.5667 36.7 36.7C33.5667 39.8333 32 43.6 32 48C32 51.8 33.15 55.1333 35.45 58C37.75 60.8667 40.7 62.7333 44.3 63.6L46.8 72ZM82.1 90L65 72.9L60 88L48 48L88 60L72.9 65L90 82.1L82.1 90Z"
+                            />
+                        </svg>
+
                         Intuitive Editing
                     </h3>
                     <p>
@@ -107,7 +176,27 @@
                     </p>
                 </div>
                 <div class="feature">
-                    <h3 class="heading-3--center icon icon--design">
+                    <h3 class="heading-3--center">
+                        <svg
+                            width="96"
+                            height="96"
+                            viewBox="0 0 96 96"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_91_1931)">
+                                <path
+                                    class="icon__fill"
+                                    d="M83.88 29.08C85.44 27.52 85.44 25 83.88 23.44L72.56 12.12C71 10.56 68.48 10.56 66.92 12.12L48.96 30.08L33.4 14.52C30.28 11.4 25.2 11.4 22.08 14.52L14.48 22.12C11.36 25.24 11.36 30.32 14.48 33.44L30.04 49L12 67.04V84H28.96L47.04 65.92L62.6 81.48C66.4 85.28 71.52 83.88 73.92 81.48L81.52 73.88C84.64 70.76 84.64 65.68 81.52 62.56L65.96 47L83.88 29.08ZM20.16 27.76L27.72 20.16L32.8 25.24L28.08 30L33.72 35.64L38.48 30.88L43.28 35.68L35.68 43.28L20.16 27.76ZM65.08 57.52L60.32 62.28L65.96 67.92L70.72 63.16L75.8 68.24L68.2 75.84L52.64 60.28L60.24 52.68L65.08 57.52ZM25.64 76H20V70.36L58.44 31.92L63.64 37.12L64.08 37.56L25.64 76ZM64.08 26.24L69.72 20.6L75.36 26.24L69.72 31.88L64.08 26.24Z"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_91_1931">
+                                    <rect width="96" height="96" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
                         No Design Compromises
                     </h3>
                     <p>
@@ -118,14 +207,52 @@
                     </p>
                 </div>
                 <div class="feature feature--reverse">
-                    <h3 class="heading-3--center icon icon--scale">Scalable</h3>
+                    <h3 class="heading-3--center">
+                        <svg
+                            width="96"
+                            height="96"
+                            viewBox="0 0 96 96"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                class="icon__fill"
+                                d="M32 54.6V24H44V54.6L38 49L32 54.6ZM52 60.6V8H64V48.6L52 60.6ZM12 74.4V40H24V62.4L12 74.4ZM12 84.2L37.8 58.4L52 70.6L74.4 48.2H68V40.2H88V60.2H80V53.8L52.4 81.4L38.2 69.2L23.2 84.2H12Z"
+                            />
+                        </svg>
+                        Scalable
+                    </h3>
                     <p>
                         Editify adapts to the unique needs of different projects
                         and scales effortlessly as your projects grow.
                     </p>
                 </div>
                 <div class="feature">
-                    <h3 class="heading-3--center icon icon--performance">
+                    <h3 class="heading-3--center">
+                        <svg
+                            width="96"
+                            height="96"
+                            viewBox="0 0 96 96"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_91_1933)">
+                                <path
+                                    class="icon__fill"
+                                    d="M81.52 34.28L76.6 41.68C78.9727 46.4123 80.1343 51.6593 79.9807 56.9509C79.8271 62.2425 78.3631 67.4133 75.72 72H20.28C16.8446 66.0404 15.4211 59.1325 16.2205 52.3003C17.0199 45.4681 19.9996 39.0753 24.7179 34.0697C29.4361 29.0641 35.6418 25.7122 42.4149 24.5108C49.188 23.3094 56.1679 24.3225 62.32 27.4L69.72 22.48C62.1859 17.6489 53.2492 15.484 44.3395 16.3317C35.4298 17.1795 27.0617 20.9908 20.5739 27.156C14.0861 33.3213 9.8534 41.4843 8.55283 50.3393C7.25225 59.1942 8.95896 68.2296 13.4 76C14.098 77.2091 15.1003 78.2145 16.3073 78.9162C17.5142 79.6179 18.8838 79.9916 20.28 80H75.68C77.0896 80.0056 78.4758 79.6386 79.698 78.9362C80.9202 78.2337 81.9351 77.2208 82.64 76C86.3255 69.6157 88.175 62.3371 87.9844 54.9678C87.7939 47.5985 85.5705 40.4253 81.56 34.24L81.52 34.28Z"
+                                />
+                                <path
+                                    class="icon__fill"
+                                    d="M42.36 61.64C43.103 62.3838 43.9853 62.9739 44.9564 63.3765C45.9276 63.7791 46.9686 63.9863 48.02 63.9863C49.0713 63.9863 50.1123 63.7791 51.0835 63.3765C52.0547 62.9739 52.937 62.3838 53.68 61.64L76.32 27.68L42.36 50.32C41.6162 51.063 41.0261 51.9453 40.6235 52.9165C40.2209 53.8877 40.0137 54.9287 40.0137 55.98C40.0137 57.0313 40.2209 58.0723 40.6235 59.0435C41.0261 60.0147 41.6162 60.897 42.36 61.64Z"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_91_1933">
+                                    <rect width="96" height="96" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
                         Performance Focused
                     </h3>
                     <p>
