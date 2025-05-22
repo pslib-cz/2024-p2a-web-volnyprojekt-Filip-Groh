@@ -157,27 +157,6 @@
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header {
     position: fixed;
     width: 100%;
@@ -190,6 +169,12 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+
+.container__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .header__logo {
@@ -258,4 +243,107 @@
 
 .header__hamburger.active > :nth-child(2) {
     display: block;
+}
+
+.header__switch {
+    box-sizing: border-box;
+    width: 6rem;
+    display: none;
+    justify-content: space-between;
+    padding: 0.25rem;
+    position: relative;
+    border-radius: 1000rem;
+}
+
+.header__switch.active {
+    display: flex;
+}
+
+.header__switch::before {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.header__switch > svg {
+    margin: 0.25rem;
+    z-index: 1;
+}
+
+.header__switch > input {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .header__switch:has(input:checked) {
+        box-shadow: -2px 2px 8px 0px var(--color-action), 0px 0px 8px 8px rgba(255, 127, 17, 0.25);
+    }
+
+    .header__switch:has(input:not(:checked)) {
+        box-shadow: 2px 2px 8px 0px var(--color-detail), 0px 0px 8px 8px var(--color-shadow);
+    }
+
+    .header__switch:has(input:checked)::before {
+        left: 0.25rem;
+        background-color: var(--color-action);
+    }
+
+    .header__switch:has(input:not(:checked))::before {
+        right: 0.25rem;
+        background-color: var(--color-detail);
+    }
+
+    .header:has(#darkmode-switch:checked) .logo__img--light {
+        display: inline;
+    }
+
+    .header:has(#darkmode-switch:checked) .logo__img--dark {
+        display: none;
+    }
+
+    .header:has(#darkmode-switch:not(:checked)) .logo__img--light {
+        display: none;
+    }
+
+    .header:has(#darkmode-switch:not(:checked)) .logo__img--dark {
+        display: inline;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .header__switch:has(input:not(:checked)) {
+        box-shadow: -2px 2px 8px 0px var(--color-action), 0px 0px 8px 8px rgba(255, 127, 17, 0.25);
+    }
+
+    .header__switch:has(input:checked) {
+        box-shadow: 2px 2px 8px 0px var(--color-detail), 0px 0px 8px 8px var(--color-shadow);
+    }
+
+    .header__switch:has(input:not(:checked))::before {
+        left: 0.25rem;
+        background-color: var(--color-action);
+    }
+
+    .header__switch:has(input:checked)::before {
+        right: 0.25rem;
+        background-color: var(--color-detail);
+    }
+
+    .header:has(#darkmode-switch:checked) .logo__img--light {
+        display: none;
+    }
+
+    .header:has(#darkmode-switch:checked) .logo__img--dark {
+        display: inline;
+    }
+
+    .header:has(#darkmode-switch:not(:checked)) .logo__img--light {
+        display: inline;
+    }
+
+    .header:has(#darkmode-switch:not(:checked)) .logo__img--dark {
+        display: none;
+    }
 }

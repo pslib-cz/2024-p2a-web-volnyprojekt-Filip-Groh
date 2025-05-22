@@ -13,4 +13,9 @@ Web bude prezentovat fiktivní službu [Editify](https://pslib.sharepoint.com/:w
 ## TODO:
 - Hamburger animation
 - Effects
-- Lightdark mode switch
+- Img optimalization
+
+- Build
+- HTML valid check
+- Desatero check
+- Assignment check

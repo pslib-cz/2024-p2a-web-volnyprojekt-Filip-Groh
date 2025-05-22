@@ -58,3 +58,27 @@
 .feature--performance .feature__heading {
     max-width: unset;
 }
+
+.header__hamburger {
+    display: none;
+}
+
+.header__nav {
+    display: inline;
+    
+}
+
+.container__container {
+    margin-right: 4rem;
+    gap: 1rem;
+}
+
+.nav__menu {
+    position: static;
+    display: flex;
+    gap: 1rem;
+}
+
+.header__switch {
+    display: flex;
+}
