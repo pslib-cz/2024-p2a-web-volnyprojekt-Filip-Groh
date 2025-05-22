@@ -150,7 +150,7 @@
                 and get ready to run the installation command. It's as easy
                 as:
             </p>
-            <code class="code-block"><pre>npm install editify-cms</pre></code>
+            <pre><code class="code-block">npm install editify-cms</code></pre>
             <p>
                 ...and that's the magic! Editify will start downloading and
                 integrating into your project. We'll walk you through the
@@ -170,7 +170,7 @@
                 open your terminal in your project's root directory and fire
                 off this command:
             </p>
-            <code class="code-block"><pre>npx editify-cms server</pre></code>
+            <pre><code class="code-block">npx editify-cms server</code></pre>
             <p>
                 This command will launch the Editify server, which handles
                 all the behind-the-scenes magic for managing and delivering
@@ -192,27 +192,28 @@
                 editify-cms, create new Editify object with url given by the
                 backend server.
             </p>
+            <pre>
             <code class="code-block">
-                <pre>
 import { Editify } from 'editify-cms'; 
 const cms = new Editify('url to your backend Editify API');
-                </pre>
             </code>
+            </pre>
+
             <p>
                 After you set-up the connection, every element with
                 attribute data-editify-id will fetch its content from the
                 server. Given id represents what data will be fetched from
                 the server.
             </p>
+            <pre>
             <code class="code-block">
-                <pre>
 &lt;div data-editify-id=”someUniqueID”&gt;&lt;/div&gt;
 ...
 &lt;button data-editify-id=”someUniqueID”&gt;&lt;/button&gt;
 ...
 &lt;img data-editify-id=”someUniqueID”&gt;
-                </pre>
             </code>
+            </pre>
         </section>
         <section class="page__section page__section--margin-overflow-fix page__section--unset-max-width page__section--desktop-margin--small">
             <h2 class="heading-2--center heading-2--bottom-margin">Usage With React</h2>
@@ -222,25 +223,26 @@ const cms = new Editify('url to your backend Editify API');
                 &lt;EditifyContext&gt; takes 1 argument backendAPI. There
                 you put the url given by the backend server.
             </p>
+            <pre>
             <code class="code-block">
-                <pre>
 import { EditifyContext } from 'editify-cms';
 
 &lt;EditifyContext backendAPI=”url to your backend EditifyAPI”&gt;
     &lt;App /&gt;
 &lt;/EditifyContext&gt;
-                </pre>
             </code>
+            </pre>
+
+            <pre>
             <code class="code-block">
-                <pre>
 import { EditableText, EditableImage } from 'editify-cms/components';
 
 &lt;&gt;
     &lt;EditableText id=”someUniqueID” /&gt;
     &lt;EditableImage id=”someUniqueID” /&gt;
 &lt;/&gt;
-                </pre>  
             </code>
+            </pre>
             <p>
                 After that you just import components &lt;EditableText&gt;
                 or &lt;EditableImage&gt; from editify-cms/components. Each
