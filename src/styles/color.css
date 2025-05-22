@@ -1,6 +1,19 @@
 body {
     color: var(--color-text);
     background-color: var(--color-background);
+    background-image: var(--gradient);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vw;
+    background-position: 0 109px;
+}
+
+body::before {
+    content: url("/abstract.svg");
+    position: absolute;
+    width: 100%;
+    top: 132px;
+    transform: scaleY(.69);
+    z-index: -1;
 }
 
 .icon__fill {

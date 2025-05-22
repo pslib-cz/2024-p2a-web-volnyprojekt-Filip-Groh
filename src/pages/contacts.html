@@ -101,27 +101,35 @@
                     possible.
                 </p>
             </section>
-            <section class="page__section page__section--center">
-                <h2 class="heading-2--bottom-margin">Contact us here</h2>
-                <h3 class="heading-3--bottom-margin-0-25">Email us on</h3>
-                <a
-                    href="mailto:support@editify.io"
-                    class="link small small--bottom-margin"
-                    >support@editify.io</a
-                >
-                <h3 class="heading-3--bottom-margin-0-25">Phone us on</h3>
-                <a href="tel:1-123-4567" class="link small small--bottom-margin"
-                    >+1 123-4567</a
-                >
-                <h3 class="heading-3--bottom-margin-0-25">Find us on</h3>
-                <p class="small small--bottom-margin">
-                    123 Developer Drive, Tech City, TC 98765
-                </p>
-                <h3 class="heading-3--bottom-margin-0-25">Work hours</h3>
-                <p class="small small--bottom-margin-0-125">Monday - Friday</p>
-                <p class="small">9:00 AM - 5:00 PM (PDT)</p>
+            <section class="page__section page__section--contact page__section--center">
+                <h2 class="contact--title heading-2--bottom-margin">Contact us here</h2>
+                <div class="contact--email">
+                    <h3 class="heading-3--bottom-margin-0-25">Email us on</h3>
+                    <a
+                        href="mailto:support@editify.io"
+                        class="link small small--bottom-margin"
+                        >support@editify.io</a
+                    >
+                </div>
+                <div class="contact--phone">
+                    <h3 class="heading-3--bottom-margin-0-25">Phone us on</h3>
+                    <a href="tel:1-123-4567" class="link small small--bottom-margin"
+                        >+1 123-4567</a
+                    >
+                </div>
+                <div class="contact--address">
+                    <h3 class="heading-3--bottom-margin-0-25">Find us on</h3>
+                    <p class="small small--bottom-margin">
+                        123 Developer Drive, Tech City, TC 98765
+                    </p>
+                </div>
+                <div class="contact--work">
+                    <h3 class="heading-3--bottom-margin-0-25">Work hours</h3>
+                    <p class="small small--bottom-margin-0-125">Monday - Friday</p>
+                    <p class="small">9:00 AM - 5:00 PM (PDT)</p>
+                </div>
             </section>
-            <section class="page__section">
+            <section class="page__section page__section--form">
                 <h2 class="heading-2--center heading-2--bottom-margin">
                     Send Us a Message
                 </h2>
@@ -133,7 +141,7 @@
                         name="name"
                         placeholder="Enter your name"
                         required
-                        class="input--bottom-margin-0-5"
+                        class="form__input input--bottom-margin-0-5"
                     />
                     <label for="email" class="label--bottom-margin-0-25">Email: </label>
                     <input
@@ -142,7 +150,7 @@
                         name="email"
                         placeholder="Enter your email"
                         required
-                        class="input--bottom-margin-0-5"
+                        class="form__input input--bottom-margin-0-5"
                     />
                     <label
                         for="subject"
@@ -154,7 +162,7 @@
                         id="subject"
                         name="subject"
                         placeholder="Enter email subject"
-                        class="input--bottom-margin-0-5"
+                        class="form__input input--bottom-margin-0-5"
                     />
                     <label for="message" class="label--bottom-margin-0-25">Message: </label>
                     <textarea
@@ -163,10 +171,10 @@
                         placeholder="Enter your message"
                         required
                         rows="8"
-                        class="form__input--resize input--bottom-margin-0-5"
+                        class="form__input form__input--resize input--bottom-margin-0-5"
                     ></textarea>
-                    <p class="small">* Optional</p>
-                    <input type="submit" class="button button--action" />
+                    <p class="small small--optional">* Optional</p>
+                    <input type="submit" value="Send Message" class="button button--action form__button" />
                 </form>
             </section>
             <footer class="footer">

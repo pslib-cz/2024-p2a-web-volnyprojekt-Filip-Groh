@@ -22,6 +22,11 @@
 .numbered-list > li {
     counter-increment: numbered-list;
     padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.numbered-list > li:last-of-type {
+    margin-bottom: 0;
 }
 
 .numbered-list > li::marker {
@@ -38,7 +43,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin: 2rem 0;
 }
 
 .feature--reverse {
@@ -47,6 +51,10 @@
 
 .feature__title {
     margin-bottom: -1rem;
+}
+
+.feature__heading {
+    max-width: 8rem;
 }
 
 .editing-table,
@@ -86,6 +94,7 @@
 }
 
 .form__label--optional::before {
+    color: var(--color-optional);
     content: "*";
     margin-right: 0.25rem;
 }
@@ -94,14 +103,22 @@
     resize: vertical;
 }
 
+.form__input {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-text);
+}
+
+.form__button {
+    border: 0px;
+    width: fit-content;
+    margin-left: auto;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-}
-
-.card--bottom-margin-2 {
-    margin-bottom: 2rem;
 }
 
 .card__tag {
@@ -121,7 +138,24 @@
     overflow-x: auto;
 }
 
+.image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
+.card__figure {
+    margin: 0;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.icon {
+    width: 100%;
+}
 
 
 
@@ -148,6 +182,7 @@
     position: fixed;
     width: 100%;
     background-color: var(--color-background);
+    z-index: 10;
 }
 
 .header__container {
