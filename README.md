@@ -17,5 +17,3 @@ Web bude prezentovat fiktivní službu [Editify](https://pslib.sharepoint.com/:w
 
 - Build
 - HTML valid check
-- Desatero check
-- Assignment check
