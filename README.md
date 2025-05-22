@@ -13,7 +13,6 @@ Web bude prezentovat fiktivní službu [Editify](https://pslib.sharepoint.com/:w
 ## TODO:
 - Hamburger animation
 - Effects
-- Img optimalization
+- Code cleanup
 
-- Build
 - HTML valid check
