@@ -1,130 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Docs | Editify</title>
-      <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-      <script type="module" crossorigin src="/assets/main-B1PD_MAB.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/style-B3tKKcVK.css">
-    </head>
-    <body>
-        <main>
-            <header>
-                <a href="./index.html">
-                    <img src="/logo.svg" alt="Editify Logo">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo-dark.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docs | Editify</title>
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+  <script type="module" crossorigin src="/assets/hamburger-DzGNCfwF.js"></script>
+  <script type="module" crossorigin src="/assets/swiper-VGzrjiwv.js"></script>
+  <script type="module" crossorigin src="/assets/main-CIm8Vtk-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/swiper-Ds_YmOBQ.css">
+  <link rel="stylesheet" crossorigin href="/assets/style-sNdV7f3X.css">
+</head>
+
+<body>
+    <main class="page">
+        <header class="header">
+            <div class="header__container">
+                <a class="header__logo" href="./index.html">
+                    <img
+                        class="logo__img logo__img--light"
+                        src="/logo-light.svg"
+                        alt="Editify Logo"
+                    />
+                    <img
+                        class="logo__img logo__img_dark"
+                        src="/logo-dark.svg"
+                        alt="Editify Logo"
+                    />
                 </a>
-                <nav>
-                    <menu>
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./examples.html">Examples</a>
-                        </li>
-                        <li>
-                            <a href="./docs.html">Docs</a>
-                        </li>
-                        <li>
-                            <a href="./contacts.html">Contacts</a>
-                        </li>
-                    </menu>
-                </nav>
-            </header>
-            <section>
-                <h1>Editify Documentation: Get Started & Integrate</h1>
-                <p>Welcome to the Editify documentation hub. Here you'll find everything you need to integrate Editify into your projects quickly and efficiently. We provide comprehensive guides, API references, tutorials, and best practices designed for developers to ensure a smooth integration and powerful results.</p>
-            </section>
-            <section>
-                <h2>Get Started</h2>
-                <p>Ready to dive into the world of effortless content management with Editify? Awesome! Getting started is a breeze. Just follow these simple steps to unlock a smoother, faster, and more intuitive editing experience for your website.
-                    First things first, make sure you have Node.js and npm (or yarn) installed on your system. If you haven't already, you can grab them from https://nodejs.org/.
-                    Once you're all set with Node.js and npm, the next step is to bring Editify into your project. Open up your terminal or command prompt, navigate to your project's root directory, and get ready to run the installation command. It's as easy as:</p>
-                <code>npm install editify-cms</code>
-                <p>...and that's the magic! Editify will start downloading and integrating into your project. We'll walk you through the next steps to configure and unleash the full power of Editify in the sections below. Let's build something amazing together!</p>
-            </section>
-            <section>
-                <h2>Spin Up The Server</h2>
-                <p>Alright, now that you've brought Editify into your project, there's one more crucial step to get your content flowing seamlessly: you'll need to spin up the Editify backend server. Think of it as the engine that powers your content management experience.
-                    To get the server running, simply open your terminal in your project's root directory and fire off this command:</p>
-                <code>npx editify-cms server</code>
-                <p>This command will launch the Editify server, which handles all the behind-the-scenes magic for managing and delivering your content. Keep this server running while you're working with Editify.</p>
-                <p>Fantastic! With your backend server up and running, you're now ready to experience the magic of Editify directly on your website's frontend. Integrating Editify into your front-end is designed to be straightforward, allowing you (or your content editors) to make changes with ease.</p>
-            </section>
-            <section>
-                <h2>Usage With CommonJS</h2>
-                <p>If you are using CommonJS just import Editify from editify-cms, create new Editify object with url given by the backend server.</p>
-                <code>import { Editify } from 'editify-cms';
-                    const cms = new Editify('url to your backend Editify API');</code>
-                <p>After you set-up the connection, every element with attribute data-editify-id will fetch its content from the server. Given id represents what data will be fetched from the server.</p>
-                <code>&lt;div data-editify-id=”someUniqueID”&gt;
-                    &lt;/div&gt;
-                ...
-                &lt;button data-editify-id=”someUniqueID”&gt;
-                &lt;/button&gt;
-                ...
-                &lt;img data-editify-id=”someUniqueID”&gt;</code>
-            </section>
-            <section>
-                <h2>Usage With React</h2>
-                <p>If you are using React you need to wrap your entire website that uses Editify components in an EditifyContext. &lt;EditifyContext&gt; takes 1 argument backendAPI. There you put the url given by the backend server. </p>
-                <code>import { EditifyContext } from 'editify-cms';
+                <div class="container__container">
+                    <nav class="header__nav hamburger-zone">
+                        <menu class="nav__menu">
+                            <li>
+                                <a
+                                    class="nav__link paragraph"
+                                    href="./index.html"
+                                >
+                                    <span class="link__text">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="nav__link paragraph"
+                                    href="./examples.html"
+                                    ><span class="link__text">Examples</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="nav__link nav__link--active paragraph"
+                                    href="./docs.html"
+                                    ><span class="link__text">Docs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="nav__link paragraph"
+                                    href="./contacts.html"
+                                    ><span class="link__text">Contacts</span>
+                                </a>
+                            </li>
+                        </menu>
+                    </nav>
+                    <label for="darkmode-switch" class="header__switch hamburger-zone">
+                        <svg width="32" height="32" viewBox="0 0 96 96" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_223_4118)">
+                                <path class="icon__fill" d="M48 36C54.6 36 60 41.4 60 48C60 54.6 54.6 60 48 60C41.4 60 36 54.6 36 48C36 41.4 41.4 36 48 36ZM48 28C36.96 28 28 36.96 28 48C28 59.04 36.96 68 48 68C59.04 68 68 59.04 68 48C68 36.96 59.04 28 48 28ZM8 52H16C18.2 52 20 50.2 20 48C20 45.8 18.2 44 16 44H8C5.8 44 4 45.8 4 48C4 50.2 5.8 52 8 52ZM80 52H88C90.2 52 92 50.2 92 48C92 45.8 90.2 44 88 44H80C77.8 44 76 45.8 76 48C76 50.2 77.8 52 80 52ZM44 8V16C44 18.2 45.8 20 48 20C50.2 20 52 18.2 52 16V8C52 5.8 50.2 4 48 4C45.8 4 44 5.8 44 8ZM44 80V88C44 90.2 45.8 92 48 92C50.2 92 52 90.2 52 88V80C52 77.8 50.2 76 48 76C45.8 76 44 77.8 44 80ZM23.96 18.32C22.4 16.76 19.84 16.76 18.32 18.32C16.76 19.88 16.76 22.44 18.32 23.96L22.56 28.2C24.12 29.76 26.68 29.76 28.2 28.2C29.72 26.64 29.76 24.08 28.2 22.56L23.96 18.32ZM73.44 67.8C71.88 66.24 69.32 66.24 67.8 67.8C66.24 69.36 66.24 71.92 67.8 73.44L72.04 77.68C73.6 79.24 76.16 79.24 77.68 77.68C79.24 76.12 79.24 73.56 77.68 72.04L73.44 67.8ZM77.68 23.96C79.24 22.4 79.24 19.84 77.68 18.32C76.12 16.76 73.56 16.76 72.04 18.32L67.8 22.56C66.24 24.12 66.24 26.68 67.8 28.2C69.36 29.72 71.92 29.76 73.44 28.2L77.68 23.96ZM28.2 73.44C29.76 71.88 29.76 69.32 28.2 67.8C26.64 66.24 24.08 66.24 22.56 67.8L18.32 72.04C16.76 73.6 16.76 76.16 18.32 77.68C19.88 79.2 22.44 79.24 23.96 77.68L28.2 73.44Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_223_4118">
+                                    <rect width="96" height="96" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg width="32" height="32" viewBox="0 0 96 96" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_223_4115)">
+                                <path class="icon__fill" d="M37.48 22.04C36.76 24.6 36.4 27.28 36.4 30C36.4 46.32 49.68 59.6 66 59.6C68.72 59.6 71.4 59.24 73.96 58.52C69.8 68.76 59.72 76 48 76C32.56 76 20 63.44 20 48C20 36.28 27.24 26.2 37.48 22.04ZM48 12C28.12 12 12 28.12 12 48C12 67.88 28.12 84 48 84C67.88 84 84 67.88 84 48C84 46.16 83.84 44.32 83.6 42.56C79.68 48.04 73.28 51.6 66 51.6C54.08 51.6 44.4 41.92 44.4 30C44.4 22.76 47.96 16.32 53.44 12.4C51.68 12.16 49.84 12 48 12Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_223_4115">
+                                    <rect width="96" height="96" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <input type="checkbox" id="darkmode-switch" name="darkmode-switch">
+                    </label>
+                    <div class="header__hamburger hamburger-zone hamburger-btn">
+                        <svg
+                            width="64"
+                            height="64"
+                            viewBox="0 0 96 96"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_91_1681)">
+                                <path
+                                    d="M12 72H84V64H12V72ZM12 52H84V44H12V52ZM12 24V32H84V24H12Z"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_91_1681">
+                                    <rect width="96" height="96" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg
+                            width="64"
+                            height="64"
+                            viewBox="0 0 96 96"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_91_1678)">
+                                <path
+                                    d="M76 25.64L70.36 20L48 42.36L25.64 20L20 25.64L42.36 48L20 70.36L25.64 76L48 53.64L70.36 76L76 70.36L53.64 48L76 25.64Z"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_91_1678">
+                                    <rect width="96" height="96" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="page__section">
+            <h1 class="heading-1--center heading-1--bottom-margin">Editify Documentation: Get Started & Integrate</h1>
+            <p class="paragraph--center">
+                Welcome to the Editify documentation hub. Here you'll find
+                everything you need to integrate Editify into your projects
+                quickly and efficiently. We provide comprehensive guides,
+                API references, tutorials, and best practices designed for
+                developers to ensure a smooth integration and powerful
+                results.
+            </p>
+        </section>
+        <section class="page__section page__section--margin-overflow-fix page__section--unset-max-width page__section--desktop-margin--small">
+            <h2 class="heading-2--center heading-2--bottom-margin">Get Started</h2>
+            <p>
+                Ready to dive into the world of effortless content
+                management with Editify? Awesome! Getting started is a
+                breeze. Just follow these simple steps to unlock a smoother,
+                faster, and more intuitive editing experience for your
+                website. First things first, make sure you have Node.js and
+                npm (or yarn) installed on your system. If you haven't
+                already, you can grab them from https://nodejs.org/. Once
+                you're all set with Node.js and npm, the next step is to
+                bring Editify into your project. Open up your terminal or
+                command prompt, navigate to your project's root directory,
+                and get ready to run the installation command. It's as easy
+                as:
+            </p>
+            <code class="code-block"><pre>npm install editify-cms</pre></code>
+            <p>
+                ...and that's the magic! Editify will start downloading and
+                integrating into your project. We'll walk you through the
+                next steps to configure and unleash the full power of
+                Editify in the sections below. Let's build something amazing
+                together!
+            </p>
+        </section>
+        <section class="page__section page__section--margin-overflow-fix page__section--unset-max-width page__section--desktop-margin--small">
+            <h2 class="heading-2--center heading-2--bottom-margin">Spin Up The Server</h2>
+            <p>
+                Alright, now that you've brought Editify into your project,
+                there's one more crucial step to get your content flowing
+                seamlessly: you'll need to spin up the Editify backend
+                server. Think of it as the engine that powers your content
+                management experience. To get the server running, simply
+                open your terminal in your project's root directory and fire
+                off this command:
+            </p>
+            <code class="code-block"><pre>npx editify-cms server</pre></code>
+            <p>
+                This command will launch the Editify server, which handles
+                all the behind-the-scenes magic for managing and delivering
+                your content. Keep this server running while you're working
+                with Editify.
+            </p>
+            <p>
+                Fantastic! With your backend server up and running, you're
+                now ready to experience the magic of Editify directly on
+                your website's frontend. Integrating Editify into your
+                front-end is designed to be straightforward, allowing you
+                (or your content editors) to make changes with ease.
+            </p>
+        </section>
+        <section class="page__section page__section--margin-overflow-fix page__section--unset-max-width page__section--desktop-margin--small">
+            <h2 class="heading-2--center heading-2--bottom-margin">Usage With CommonJS</h2>
+            <p>
+                If you are using CommonJS just import Editify from
+                editify-cms, create new Editify object with url given by the
+                backend server.
+            </p>
+            <code class="code-block">
+                <pre>
+import { Editify } from 'editify-cms'; 
+const cms = new Editify('url to your backend Editify API');
+                </pre>
+            </code>
+            <p>
+                After you set-up the connection, every element with
+                attribute data-editify-id will fetch its content from the
+                server. Given id represents what data will be fetched from
+                the server.
+            </p>
+            <code class="code-block">
+                <pre>
+&lt;div data-editify-id=”someUniqueID”&gt;&lt;/div&gt;
+...
+&lt;button data-editify-id=”someUniqueID”&gt;&lt;/button&gt;
+...
+&lt;img data-editify-id=”someUniqueID”&gt;
+                </pre>
+            </code>
+        </section>
+        <section class="page__section page__section--margin-overflow-fix page__section--unset-max-width page__section--desktop-margin--small">
+            <h2 class="heading-2--center heading-2--bottom-margin">Usage With React</h2>
+            <p>
+                If you are using React you need to wrap your entire website
+                that uses Editify components in an EditifyContext.
+                &lt;EditifyContext&gt; takes 1 argument backendAPI. There
+                you put the url given by the backend server.
+            </p>
+            <code class="code-block">
+                <pre>
+import { EditifyContext } from 'editify-cms';
 
-                    &lt;EditifyContext backendAPI=”url to your backend Editify API”&gt;
-                        &lt;App /&gt;
-                    &lt;/EditifyContext&gt;</code>
-                <code>import { EditableText, EditableImage } from 'editify-cms/components';
+&lt;EditifyContext backendAPI=”url to your backend EditifyAPI”&gt;
+    &lt;App /&gt;
+&lt;/EditifyContext&gt;
+                </pre>
+            </code>
+            <code class="code-block">
+                <pre>
+import { EditableText, EditableImage } from 'editify-cms/components';
 
-                    &lt;&gt;
-                        &lt;EditableText id=”someUniqueID” /&gt;
-                        &lt;EditableImage id=”someUniqueID” /&gt;
-                    &lt;/&gt;</code>
-                <p>After that you just import components &lt;EditableText&gt; or &lt;EditableImage&gt; from editify-cms/components. Each component takes id argument that represents the data on the server.</p>
-            </section>
-            <section>
-                <h2>Editing Values</h2>
-                <p>Now you can enjoy your editable website. If you want to edit your content just visit the URL given by the server. There you can start editing texts and images. Don't forget to click the save button!</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Key</th>
-                            <th>Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Button1</td>
-                            <td>View Docs</td>
-                        </tr>
-                        <tr>
-                            <td>Button2</td>
-                            <td>See Examples</td>
-                        </tr>
-                        <tr>
-                            <td>ContactInfo1</td>
-                            <td>support@editify.io</td>
-                        </tr>
-                        <tr>
-                            <td>ContactInfo2</td>
-                            <td>123 Developer Drive, Tech City, TC 98765</td>
-                        </tr>
-                        <tr>
-                            <td>ContactInfo3</td>
-                            <td>+1 123-4567</td>
-                        </tr>
-                        <tr>
-                            <td>Img1</td>
-                            <td>
-                                <img src="/logo.svg" alt="Editify Logo">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <footer>
-                <p>Editify - Filip Groh - 2025</p>
-            </footer>
-        </main>
-    </body>
+&lt;&gt;
+    &lt;EditableText id=”someUniqueID” /&gt;
+    &lt;EditableImage id=”someUniqueID” /&gt;
+&lt;/&gt;
+                </pre>  
+            </code>
+            <p>
+                After that you just import components &lt;EditableText&gt;
+                or &lt;EditableImage&gt; from editify-cms/components. Each
+                component takes id argument that represents the data on the
+                server.
+            </p>
+        </section>
+        <section class="page__section page__section--margin-overflow-fix page__section--unset-max-width page__section--desktop-margin--small">
+            <h2 class="heading-2--center heading-2--bottom-margin">Editing Values</h2>
+            <p class="paragraph--bottom-margin">
+                Now you can enjoy your editable website. If you want to edit
+                your content just visit the URL given by the server. There
+                you can start editing texts and images. Don't forget to
+                click the save button!
+            </p>
+            <table class="editing-table">
+                <thead>
+                    <tr>
+                        <th>Key</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Button1</td>
+                        <td>View Docs</td>
+                    </tr>
+                    <tr>
+                        <td>Button2</td>
+                        <td>See Examples</td>
+                    </tr>
+                    <tr>
+                        <td>ContactInfo1</td>
+                        <td>support@editify.io</td>
+                    </tr>
+                    <tr>
+                        <td>ContactInfo2</td>
+                        <td>123 Developer Drive, Tech City, TC 98765</td>
+                    </tr>
+                    <tr>
+                        <td>ContactInfo3</td>
+                        <td>+1 123-4567</td>
+                    </tr>
+                    <tr>
+                        <td>Img1</td>
+                        <td>
+                            <img src="/logo.svg" alt="Editify Logo" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer class="footer">
+            <p class="small">Editify - Filip Groh - 2025</p>
+        </footer>
+    </main>
+</body>
+
 </html>
