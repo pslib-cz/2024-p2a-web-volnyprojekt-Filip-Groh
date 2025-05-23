@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Docs | Editify</title>
   <script type="module" crossorigin src="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-  <script type="module" crossorigin src="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/hamburger-DzGNCfwF.js"></script>
+  <script type="module" crossorigin src="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/hamburger-Cz1rtKvS.js"></script>
   <script type="module" crossorigin src="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/swiper-VGzrjiwv.js"></script>
   <script type="module" crossorigin src="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/clarity-BHY1jqfA.js"></script>
-  <script type="module" crossorigin src="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/main-B7HUIPVl.js"></script>
+  <script type="module" crossorigin src="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/gallery-CxIK1Eul.js"></script>
+  <script type="module" crossorigin src="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/main-C9QEH4FN.js"></script>
   <link rel="stylesheet" crossorigin href="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/swiper-Ds_YmOBQ.css">
-  <link rel="stylesheet" crossorigin href="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/style-DtQG4WFP.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/gallery-3LP2cypu.css">
+  <link rel="stylesheet" crossorigin href="/2024-p2a-web-volnyprojekt-Filip-Groh/assets/style-BCb30raj.css">
 </head>
 
 <body>
@@ -90,42 +92,11 @@
                         </svg>
                         <input type="checkbox" id="darkmode-switch" name="darkmode-switch">
                     </label>
-                    <div class="header__hamburger hamburger-zone hamburger-btn">
-                        <svg
-                            width="64"
-                            height="64"
-                            viewBox="0 0 96 96"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <g clip-path="url(#clip0_91_1681)">
-                                <path
-                                    d="M12 72H84V64H12V72ZM12 52H84V44H12V52ZM12 24V32H84V24H12Z"
-                                />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_91_1681">
-                                    <rect width="96" height="96" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <svg
-                            width="64"
-                            height="64"
-                            viewBox="0 0 96 96"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <g clip-path="url(#clip0_91_1678)">
-                                <path
-                                    d="M76 25.64L70.36 20L48 42.36L25.64 20L20 25.64L42.36 48L20 70.36L25.64 76L48 53.64L70.36 76L76 70.36L53.64 48L76 25.64Z"
-                                />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_91_1678">
-                                    <rect width="96" height="96" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
+                    <svg class="header__hamburger hamburger-zone hamburger-btn" width="64" height="64" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12,24L84,24" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M12,48L84,48" stroke-width="8" stroke-linecap="round"/>
+                        <path d="M12,72L84,72" stroke-width="8" stroke-linecap="round"/>
+                    </svg>
                 </div>
             </div>
         </header>
@@ -198,12 +169,10 @@
                 editify-cms, create new Editify object with url given by the
                 backend server.
             </p>
-            <pre>
-            <code class="code-block">
+            <pre><code class="code-block">
 import { Editify } from 'editify-cms'; 
 const cms = new Editify('url to your backend Editify API');
-            </code>
-            </pre>
+            </code></pre>
 
             <p>
                 After you set-up the connection, every element with
@@ -211,15 +180,13 @@ const cms = new Editify('url to your backend Editify API');
                 server. Given id represents what data will be fetched from
                 the server.
             </p>
-            <pre>
-            <code class="code-block">
+            <pre><code class="code-block">
 &lt;div data-editify-id=”someUniqueID”&gt;&lt;/div&gt;
 ...
 &lt;button data-editify-id=”someUniqueID”&gt;&lt;/button&gt;
 ...
 &lt;img data-editify-id=”someUniqueID”&gt;
-            </code>
-            </pre>
+            </code></pre>
         </section>
         <section class="page__section page__section--margin-overflow-fix page__section--unset-max-width page__section--desktop-margin--small">
             <h2 class="heading-2--center heading-2--bottom-margin">Usage With React</h2>
@@ -229,26 +196,22 @@ const cms = new Editify('url to your backend Editify API');
                 &lt;EditifyContext&gt; takes 1 argument backendAPI. There
                 you put the url given by the backend server.
             </p>
-            <pre>
-            <code class="code-block">
+            <pre><code class="code-block">
 import { EditifyContext } from 'editify-cms';
 
 &lt;EditifyContext backendAPI=”url to your backend EditifyAPI”&gt;
     &lt;App /&gt;
 &lt;/EditifyContext&gt;
-            </code>
-            </pre>
+            </code></pre>
 
-            <pre>
-            <code class="code-block">
+            <pre><code class="code-block">
 import { EditableText, EditableImage } from 'editify-cms/components';
 
 &lt;&gt;
     &lt;EditableText id=”someUniqueID” /&gt;
     &lt;EditableImage id=”someUniqueID” /&gt;
 &lt;/&gt;
-            </code>
-            </pre>
+            </code></pre>
             <p>
                 After that you just import components &lt;EditableText&gt;
                 or &lt;EditableImage&gt; from editify-cms/components. Each
