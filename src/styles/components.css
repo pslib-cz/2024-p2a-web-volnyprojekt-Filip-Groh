@@ -214,17 +214,15 @@
     color: var(--color-text);
 }
 
-.nav__link--active .link__text {
+.link__text {
     position: relative;
 }
 
-.nav__link--active .link__text::after {
+.link__text::after {
     content: "";
     position: absolute;
     top: 90%;
     background-color: var(--color-text);
-    left: 0;
-    right: 0;
     height: 0.125rem;
 }
 

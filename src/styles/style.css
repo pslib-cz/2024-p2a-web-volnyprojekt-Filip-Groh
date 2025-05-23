@@ -1,4 +1,4 @@
-@layer normalize, typography, fonts, color, components, layout, desktop;
+@layer normalize, typography, fonts, color, components, layout, desktop, animation;
 
 @import "normalize.css" layer(normalize);
 @import "components.css" layer(components);
@@ -6,6 +6,7 @@
 @import "layout.css" layer(layout);
 @import "fonts.css" layer(fonts);
 @import "color.css" layer(color);
+@import "animation.css" layer(animation);
 @import "desktop.css" layer(desktop) screen and (min-width: 1024px);
 
 :root {
