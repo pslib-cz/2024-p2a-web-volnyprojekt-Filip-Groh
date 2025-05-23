@@ -1,3 +1,11 @@
+body {
+    background-position: 0 calc(-50vw + 609px);
+}
+
+.page {
+    gap: 8rem;
+}
+
 .page__section--unset-max-width {
     max-width: unset;
 }
@@ -25,6 +33,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title title" "email address" "phone work";
+}
+
+.page__section--top-margin-small {
+    margin-top: 8rem;
+}
+
+.page__section--top-margin-big {
+    margin-top: 16rem;
+}
+
+.page__section--first-top-margin {
+    margin-top: calc(109px + 16rem);
 }
 
 .contact--title {
