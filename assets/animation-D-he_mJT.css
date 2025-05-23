@@ -1,0 +1,1 @@
+.link__text:after{left:50%;right:50%;transition:left .25s,right .25s}.nav__link--active .link__text:after{left:0;right:0}.nav__link:hover .link__text:after{left:0;right:0}
