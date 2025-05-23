@@ -65,7 +65,7 @@
 .editing-table tr,
 .editing-table td,
 .editing-table th {
-    border: 2px solid var(--color-detail);
+    border: 2px solid var(--color-table);
     border-collapse: collapse;
 }
 
@@ -118,7 +118,6 @@
 
 .form__button {
     border: 0px;
-    width: fit-content;
     margin-left: auto;
 }
 
@@ -166,7 +165,8 @@
 
 .header {
     position: fixed;
-    width: 100%;
+    left: 0;
+    right: 0;
     background-color: var(--color-background);
     z-index: 10;
 }
@@ -238,7 +238,7 @@
     justify-content: space-between;
     padding: 0.25rem;
     position: relative;
-    border-radius: 1000rem;
+    border-radius: 2rem;
 }
 
 .header__switch::before {

@@ -9,6 +9,3 @@ Web bude prezentovat fiktivní službu [Editify](https://pslib.sharepoint.com/:w
 - Examples - kde bude galerie webů, vytvořený za pomocí Editify
 - Docs - kde bude dokumentace k použití
 - Contacts - kde budou kontaktní informace a formulář
-
-## TODO:
-- Code cleanup

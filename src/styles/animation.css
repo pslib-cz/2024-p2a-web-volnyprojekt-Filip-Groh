@@ -1,5 +1,5 @@
 * {
-    transition: color var(--animation-darkmode-switch), background-color var(--animation-darkmode-switch), fill var(--animation-darkmode-switch);
+    transition: color var(--animation-darkmode-switch), background-color var(--animation-darkmode-switch), fill var(--animation-darkmode-switch), border-color var(--animation-darkmode-switch);
 }
 
 .link__text::after {
@@ -30,6 +30,9 @@
     transition: d var(--animation-hamburger), stroke var(--animation-darkmode-switch);
 }
 
+/*
+    hamburger animace rozdělena na 2 části
+*/
 .header__hamburger.active-2 > :nth-child(1) {
     d: path("M12,48L84,48");
 }

@@ -43,15 +43,25 @@
     );
 }
 
+/* 
+    kdyby byl čas před načtením DOMu větší než 0, tak by se z bowser barviček elementů postupně přecházelo do určitých barev
+    při načtení se barvy přepnou instantně a až po načtení se přes JS nastaví čas
+*/
 :root.root--transition-ready {
     --animation-darkmode-switch: 0.25s;
 }
 
+/*
+    #darkmode-switch checkbox indikuje zdali uživatel chce či nechce použít svůj preferovaný color scheme 
+    :not(:checked) - znamená použij preferovaný color scheme
+    :checked - znamená použij opačný color scheme
+*/
 @media (prefers-color-scheme: dark) {
     :root:has(#darkmode-switch:not(:checked)) {
         --color-text: var(--color-text-dark);
         --color-background: var(--color-background-dark);
         --color-shadow: var(--color-shadow-dark);
+        --color-table: var(--color-detail);
 
         --gradient: var(--gradient-dark);
     }
@@ -60,6 +70,7 @@
         --color-text: var(--color-text-light);
         --color-background: var(--color-background-light);
         --color-shadow: var(--color-shadow-light);
+        --color-table: var(--color-action);
 
         --gradient: var(--gradient-light);
     }
@@ -70,6 +81,7 @@
         --color-text: var(--color-text-light);
         --color-background: var(--color-background-light);
         --color-shadow: var(--color-shadow-light);
+        --color-table: var(--color-action);
 
         --gradient: var(--gradient-light);
     }
@@ -78,6 +90,7 @@
         --color-text: var(--color-text-dark);
         --color-background: var(--color-background-dark);
         --color-shadow: var(--color-shadow-dark);
+        --color-table: var(--color-detail);
 
         --gradient: var(--gradient-dark);
     }
