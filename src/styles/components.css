@@ -112,6 +112,8 @@
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     border: 1px solid var(--color-text);
+    background-color: var(--color-background);
+    color: var(--color-text);
 }
 
 .form__button {
@@ -271,7 +273,7 @@
     }
 
     .header__switch:has(input:not(:checked))::before {
-        right: 0.25rem;
+        left: 3.25rem;
         background-color: var(--color-detail);
     }
 
@@ -307,7 +309,7 @@
     }
 
     .header__switch:has(input:checked)::before {
-        right: 0.25rem;
+        left: 3.25rem;
         background-color: var(--color-detail);
     }
 

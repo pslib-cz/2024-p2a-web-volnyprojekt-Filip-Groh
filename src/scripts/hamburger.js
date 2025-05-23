@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const time = parseFloat(window.getComputedStyle(document.body).getPropertyValue("--animation-hamburger").replace("s", ""))
     let hamelmnts = document.querySelectorAll(".hamburger-zone")
     for (const btn of document.querySelectorAll(".hamburger-btn")) {
         btn.addEventListener("click", (e) => {
@@ -9,12 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     element.classList.toggle("active-3")
                     setTimeout(() => {
                         element.classList.toggle("active-2")
-                    }, 250) 
+                    }, time / 2 * 1000) 
                 } else {
                     element.classList.toggle("active-2")
                     setTimeout(() => {
                         element.classList.toggle("active-3")
-                    }, 250) 
+                    }, time / 2 * 1000) 
                 }
             } 
         })

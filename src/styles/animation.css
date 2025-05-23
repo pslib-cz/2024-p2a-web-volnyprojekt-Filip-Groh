@@ -1,7 +1,11 @@
+* {
+    transition: color var(--animation-darkmode-switch), background-color var(--animation-darkmode-switch), fill var(--animation-darkmode-switch);
+}
+
 .link__text::after {
     left: 50%;
     right: 50%;
-    transition: left var(--animation-line), right var(--animation-line);
+    transition: left var(--animation-line), right var(--animation-line), background-color var(--animation-darkmode-switch);
 }
 
 .nav__link--active .link__text::after {
@@ -15,15 +19,15 @@
 }
 
 .header__hamburger > :nth-child(1) {
-    transition: d 0.5s;
+    transition: d var(--animation-hamburger), stroke var(--animation-darkmode-switch);
 }
 
 .header__hamburger > :nth-child(2) {
-    transition: d 0.5s;
+    transition: d var(--animation-hamburger), stroke var(--animation-darkmode-switch);
 }
 
 .header__hamburger > :nth-child(3) {
-    transition: d 0.5s;
+    transition: d var(--animation-hamburger), stroke var(--animation-darkmode-switch);
 }
 
 .header__hamburger.active-2 > :nth-child(1) {
@@ -52,7 +56,7 @@
 
 .nav__menu {
     top: -130%;
-    transition: top 1s;
+    transition: top var(--animation-hamburger-menu), color var(--animation-darkmode-switch), background-color var(--animation-darkmode-switch);
 }
 
 .header__nav.active .nav__menu {
@@ -64,9 +68,13 @@
 }
 
 .header__switch--transition-ready {
-    transition: translate 1s;
+    transition: box-shadow var(--animation-darkmode-switch), translate var(--animation-hamburger-menu);
 }
 
 .header__switch.active {
     translate: 0 0;
+}
+
+.header__switch::before {
+    transition: left var(--animation-darkmode-switch), background-color var(--animation-darkmode-switch);
 }

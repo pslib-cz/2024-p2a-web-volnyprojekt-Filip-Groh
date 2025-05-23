@@ -13,6 +13,9 @@
     font-size: 16px;
 
     --animation-line: 0.3s;
+    --animation-hamburger: 0.25s;
+    --animation-hamburger-menu: 0.5s;
+    --animation-darkmode-switch: 0s;
 
     --color-text-dark: #f5f5f5;
     --color-text-light: #080705;
@@ -27,8 +30,8 @@
     --gradient-dark: radial-gradient(
         #26005c80 0%, 
         #22005680 21%,
-        #1a004580 50%, 
-        #0d002980 82%, 
+        #1a004550 50%, 
+        #0d002940 82%, 
         #00000000 100%
     );
     --gradient-light: radial-gradient(
@@ -38,6 +41,10 @@
         #e6faff40 82%, 
         #ffffff00 100%
     );
+}
+
+:root.root--transition-ready {
+    --animation-darkmode-switch: 0.25s;
 }
 
 @media (prefers-color-scheme: dark) {
