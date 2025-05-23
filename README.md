@@ -1,6 +1,6 @@
 # Editify - Web
 
-[Odkaz na GitHub pages](https://pslib-cz.github.io/2024-p2a-web-volnyprojekt-Filip-Groh)
+[Odkaz na GitHub pages](https://pslib-cz.github.io/2024-p2a-web-volnyprojekt-Filip-Groh/)
 
 [Odkaz na Figma plátno](https://www.figma.com/design/uOqXkSCOPTGQDWZEAkvgU4/GrohFilip?node-id=51-817&t=uYBVmWlyjVI0J0hF-1)
 
