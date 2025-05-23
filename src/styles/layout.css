@@ -1,7 +1,22 @@
+body {
+    min-height: 100vh;
+}
+
 .page {
     display: flex;
     flex-direction: column;
     gap: 6rem;
+    min-height: 100vh;
+}
+
+.page::after {
+    content: "";
+    flex-grow: 1;
+    order: 1;
+}
+
+.footer {
+    order: 2;
 }
 
 .page__section {
