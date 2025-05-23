@@ -1,6 +1,7 @@
 import "./hamburger";
 import "./swiper";
 import "./clarity";
+import "./gallery";
 
 function getCookie(cname) {
     let name = cname + "=";
