@@ -24,6 +24,7 @@ function setCookie(cname, cvalue) {
 
 document.addEventListener("DOMContentLoaded", (e) => {
     document.querySelector("#darkmode-switch").checked = getCookie("invertedmode") === "true";
+    document.querySelector(".header__switch").classList.add("header__switch--transition-ready");
 })
 
 document.querySelector("#darkmode-switch").addEventListener("change", (e) => {

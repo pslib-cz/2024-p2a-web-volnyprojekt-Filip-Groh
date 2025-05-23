@@ -50,35 +50,6 @@
     d: path("M24,72L72,24");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .nav__menu {
     top: -130%;
     transition: top 1s;
@@ -89,8 +60,11 @@
 }
 
 .header__switch {
-    transition: translate 1s;
     translate: 0 -200%;
+}
+
+.header__switch--transition-ready {
+    transition: translate 1s;
 }
 
 .header__switch.active {
