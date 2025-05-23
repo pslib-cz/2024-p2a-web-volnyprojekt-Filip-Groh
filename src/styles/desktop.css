@@ -80,5 +80,9 @@
 }
 
 .header__switch {
-    display: flex;
+    transform: translateY(200%);
+}
+
+.header__switch.active {
+    transform: translateY(0);
 }

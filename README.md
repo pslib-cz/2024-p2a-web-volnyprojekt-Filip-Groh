@@ -11,5 +11,4 @@ Web bude prezentovat fiktivní službu [Editify](https://pslib.sharepoint.com/:w
 - Contacts - kde budou kontaktní informace a formulář
 
 ## TODO:
-- Hamburger animation
 - Code cleanup
