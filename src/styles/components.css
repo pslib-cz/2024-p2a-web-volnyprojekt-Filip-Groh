@@ -141,7 +141,7 @@
 
 .code-block {
     display: block;
-    overflow-x: auto;
+    overflow: auto clip;
 }
 
 .image {

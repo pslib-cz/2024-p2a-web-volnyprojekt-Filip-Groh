@@ -6,7 +6,9 @@ import "lightgallery/css/lightgallery.css"
 import "lightgallery/css/lg-zoom.css"
 import "lightgallery/css/lg-thumbnail.css"
 
-lightGallery(document.querySelector('.gallery'), {
-    selector: '.gallery__link',
-    plugins: [lgZoom, lgThumbnail]
-});
+for (const gallery of document.querySelectorAll(".gallery")) {
+    lightGallery(gallery, {
+        selector: '.gallery__link',
+        plugins: [lgZoom, lgThumbnail]
+    });
+}

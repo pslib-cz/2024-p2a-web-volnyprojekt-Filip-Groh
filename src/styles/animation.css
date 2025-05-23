@@ -1,3 +1,8 @@
+/*
+    animace patternu na pozadí je přímo v .svg souboru
+    animace patternu má lehké performance issues na chromu, na firefoxu běží plynule
+*/
+
 * {
     transition: color var(--animation-darkmode-switch), background-color var(--animation-darkmode-switch), fill var(--animation-darkmode-switch), border-color var(--animation-darkmode-switch);
 }
