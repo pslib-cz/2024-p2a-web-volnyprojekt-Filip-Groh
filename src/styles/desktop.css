@@ -85,3 +85,7 @@
 .header__switch.active {
     transform: translateY(0);
 }
+
+.code-block {
+    margin: 2rem;
+}

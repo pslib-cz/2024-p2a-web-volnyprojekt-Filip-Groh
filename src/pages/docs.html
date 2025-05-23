@@ -161,12 +161,10 @@
                 editify-cms, create new Editify object with url given by the
                 backend server.
             </p>
-            <pre>
-            <code class="code-block">
+            <pre><code class="code-block">
 import { Editify } from 'editify-cms'; 
 const cms = new Editify('url to your backend Editify API');
-            </code>
-            </pre>
+            </code></pre>
 
             <p>
                 After you set-up the connection, every element with
@@ -174,15 +172,13 @@ const cms = new Editify('url to your backend Editify API');
                 server. Given id represents what data will be fetched from
                 the server.
             </p>
-            <pre>
-            <code class="code-block">
+            <pre><code class="code-block">
 &lt;div data-editify-id=”someUniqueID”&gt;&lt;/div&gt;
 ...
 &lt;button data-editify-id=”someUniqueID”&gt;&lt;/button&gt;
 ...
 &lt;img data-editify-id=”someUniqueID”&gt;
-            </code>
-            </pre>
+            </code></pre>
         </section>
         <section class="page__section page__section--margin-overflow-fix page__section--unset-max-width page__section--desktop-margin--small">
             <h2 class="heading-2--center heading-2--bottom-margin">Usage With React</h2>
@@ -192,26 +188,22 @@ const cms = new Editify('url to your backend Editify API');
                 &lt;EditifyContext&gt; takes 1 argument backendAPI. There
                 you put the url given by the backend server.
             </p>
-            <pre>
-            <code class="code-block">
+            <pre><code class="code-block">
 import { EditifyContext } from 'editify-cms';
 
 &lt;EditifyContext backendAPI=”url to your backend EditifyAPI”&gt;
     &lt;App /&gt;
 &lt;/EditifyContext&gt;
-            </code>
-            </pre>
+            </code></pre>
 
-            <pre>
-            <code class="code-block">
+            <pre><code class="code-block">
 import { EditableText, EditableImage } from 'editify-cms/components';
 
 &lt;&gt;
     &lt;EditableText id=”someUniqueID” /&gt;
     &lt;EditableImage id=”someUniqueID” /&gt;
 &lt;/&gt;
-            </code>
-            </pre>
+            </code></pre>
             <p>
                 After that you just import components &lt;EditableText&gt;
                 or &lt;EditableImage&gt; from editify-cms/components. Each
